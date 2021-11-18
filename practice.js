@@ -44,3 +44,30 @@ console.log(evenOrOdd(0))
 for (const num of wholeLottaNumbers){
     evenOrOdd(num)
 }
+
+// Double Functions
+
+const words = [
+    "The", "killing", "complex", "houses",
+    "married", "kittens", "and", "single",
+    "soldiers", "and", "their", "kleptomaniacal",
+    "families"
+]
+
+const filter = () => {
+    let unFilteredWords = []
+    for (const word of words){
+    if (word.startsWith('k')){
+    } else {
+        unFilteredWords.push(word)
+    }
+}
+    return unFilteredWords
+}
+
+const stringBuilder = (filterFunction) => {
+    let lotsaWords = filterFunction.join(' ')
+    return lotsaWords
+}
+
+console.log(stringBuilder(filter()))
