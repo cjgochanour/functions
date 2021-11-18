@@ -16,3 +16,11 @@ const add = (num2, num3, num1) => {
 }
 
 console.log(add(17, 4, 11))
+
+const go = (direction, mph) => {
+    let message = `The car is moving ${direction} at ${mph} mph.`
+    if (mph > 75) {
+        message += ` SLOW DOWN!`
+    }
+    return message
+}
