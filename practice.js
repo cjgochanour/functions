@@ -94,3 +94,21 @@ const svensLuck = (fraction) => {
     }
     return svenString;
 };
+
+// Fast Food (Multiple Parameters)
+
+const mealMaker = (san, sid, dri, des) => {
+    let meal = {};
+    meal.sandwich = san;
+    meal.side = sid;
+    meal.drink = dri;
+    meal.dessert = des;
+    return meal;
+};
+
+const takeOutBag = mealMaker(
+    "Ultimate Slammer",
+    "Fudge sundae",
+    "Mr. Pepper",
+    "Potato wedges"
+);
