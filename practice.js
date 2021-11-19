@@ -112,3 +112,36 @@ const takeOutBag = mealMaker(
     "Mr. Pepper",
     "Potato wedges"
 );
+
+// Same Chores, Different Days
+const donny = {
+    firstName: "Donald",
+    lastName: "McLelland",
+};
+const yolo = {
+    firstName: "Yolanda",
+    lastName: "Johnson",
+};
+
+const groceries = (person) =>
+    `${person.firstName} ${person.lastName} went to the grocery store`;
+const oil = (person) =>
+    `${person.firstName} ${person.lastName} got the enginee oil changed`;
+const trash = (person) =>
+    `${person.firstName} ${person.lastName} took out the trash`;
+const pbs = (person) =>
+    `${person.firstName} ${person.lastName} donated to their local PBS broadcasting station`;
+const dishes = (person) =>
+    `${person.firstName} ${person.lastName} washed the dishes`;
+const vaccuum = (person) =>
+    `${person.firstName} ${person.lastName} vaccumed the carpet`;
+// the above functions will give the proper output, but I am not sure how to make that compatible with dayPlanner(), or if that's even what's being asked
+// this is a working substitute function
+const lawn = () => `mowed the lawn`;
+const dryCleaning = () => `picked up the dry cleaning`;
+const batteries = () => `replaced the batteries in the smoke detectors`;
+
+const dayPlanner = (firstChore, secondChore, thirdChore, person, day) =>
+    `On ${day}, ${person.firstName} ${person.lastName} ${firstChore}, ${person.firstName} ${person.lastName} ${secondChore}, and ${person.firstName} ${person.lastName} ${thirdChore}.`;
+
+console.log(dayPlanner(lawn(), dryCleaning(), batteries(), yolo, "Monady"));
